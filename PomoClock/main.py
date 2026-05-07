@@ -1,6 +1,6 @@
 """Pomodoro Timer — Desktop番茄钟应用"""
 
-from pomodoro.ui.app import PomodoroApp
+from PomoClock.ui.app import PomodoroApp
 
 
 def main():

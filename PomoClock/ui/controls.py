@@ -2,7 +2,7 @@
 
 import tkinter as tk
 
-from pomodoro.timer_engine import TimerState
+from PomoClock.timer_engine import TimerState
 
 
 class Controls(tk.Frame):

@@ -2,9 +2,9 @@
 
 import tkinter as tk
 
-from pomodoro.ui.base import BaseDialog, create_secondary_button
-from pomodoro.ui.theme import BG, TEXT, SURFACE, BLUE
-from pomodoro.storage import load_stats, get_today_stats, get_weekly_stats
+from PomoClock.ui.base import BaseDialog, create_secondary_button
+from PomoClock.ui.theme import BG, TEXT, SURFACE, BLUE
+from PomoClock.storage import load_stats, get_today_stats, get_weekly_stats
 
 
 class StatsDialog(BaseDialog):

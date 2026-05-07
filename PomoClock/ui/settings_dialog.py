@@ -2,8 +2,8 @@
 
 import tkinter as tk
 
-from pomodoro.ui.base import BaseDialog, create_accent_button, create_secondary_button
-from pomodoro.ui.theme import BG, TEXT, SURFACE
+from PomoClock.ui.base import BaseDialog, create_accent_button, create_secondary_button
+from PomoClock.ui.theme import BG, TEXT, SURFACE
 
 
 class SettingsDialog(BaseDialog):

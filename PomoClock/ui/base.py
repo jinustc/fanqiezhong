@@ -2,7 +2,7 @@
 
 import tkinter as tk
 
-from pomodoro.ui.theme import BG, TEXT, SURFACE, OVERLAY, OVERLAY_HOVER, BLUE, BLUE_HOVER
+from PomoClock.ui.theme import BG, TEXT, SURFACE, OVERLAY, OVERLAY_HOVER, BLUE, BLUE_HOVER
 
 
 class BaseDialog(tk.Toplevel):
@@ -25,7 +25,7 @@ class BaseDialog(tk.Toplevel):
         self.geometry(f"+{px}+{py}")
 
     def _create_title(self, text: str) -> tk.Label:
-        from pomodoro.ui.theme import FONT_TITLE
+        from PomoClock.ui.theme import FONT_TITLE
         return tk.Label(self, text=text, font=FONT_TITLE, bg=BG, fg=TEXT)
 
 

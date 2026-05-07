@@ -9,7 +9,7 @@ from typing import Any
 
 def _data_dir() -> Path:
     appdata = os.environ.get("APPDATA", os.path.expanduser("~"))
-    path = Path(appdata) / "pomodoro"
+    path = Path(appdata) / "PomoClock"
     path.mkdir(parents=True, exist_ok=True)
     return path
 

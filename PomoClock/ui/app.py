@@ -2,14 +2,14 @@
 
 import tkinter as tk
 
-from pomodoro.timer_engine import PomodoroEngine, TimerState, SessionType
-from pomodoro.storage import load_settings, save_settings, record_work_session
-from pomodoro.notifications import send_notification, play_sound
-from pomodoro.ui.timer_frame import TimerFrame
-from pomodoro.ui.controls import Controls
-from pomodoro.ui.task_panel import TaskPanel
-from pomodoro.ui.settings_dialog import SettingsDialog
-from pomodoro.ui.stats_dialog import StatsDialog
+from PomoClock.timer_engine import PomodoroEngine, TimerState, SessionType
+from PomoClock.storage import load_settings, save_settings, record_work_session
+from PomoClock.notifications import send_notification, play_sound
+from PomoClock.ui.timer_frame import TimerFrame
+from PomoClock.ui.controls import Controls
+from PomoClock.ui.task_panel import TaskPanel
+from PomoClock.ui.settings_dialog import SettingsDialog
+from PomoClock.ui.stats_dialog import StatsDialog
 
 
 # 不依赖实例状态的映射表，提为模块常量

@@ -4,7 +4,7 @@ import tkinter as tk
 from tkinter import messagebox
 from datetime import datetime
 
-from pomodoro.storage import load_tasks, save_tasks
+from PomoClock.storage import load_tasks, save_tasks
 
 
 class TaskPanel(tk.Frame):

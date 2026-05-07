@@ -10,7 +10,7 @@ Desktop Pomodoro timer built with Python 3 + tkinter. Catppuccin Mocha dark them
 
 ```
 # Launch the app
-"C:\Users\jinus\AppData\Local\Programs\Python\Python313\python.exe" -c "import sys; sys.path.insert(0, r'C:\Users\jinus\Desktop\first-cc'); from pomodoro.main import main; main()"
+"C:\Users\jinus\AppData\Local\Programs\Python\Python313\python.exe" -c "import sys; sys.path.insert(0, r'C:\Users\jinus\Desktop\first-cc'); from PomoClock.main import main; main()"
 
 # Or double-click the launcher
 启动番茄钟.bat
@@ -22,7 +22,7 @@ Desktop Pomodoro timer built with Python 3 + tkinter. Catppuccin Mocha dark them
 
 **Data flow**: `PomodoroApp` (tk.Tk) owns the `PomodoroEngine`, wires callbacks (`on_tick`, `on_state_change`, `on_session_complete`), and bridges engine → UI components → storage.
 
-**Persistence** (`storage.py`): JSON files in `%APPDATA%/pomodoro/` — `settings.json`, `tasks.json`, `stats.json`. Stats are keyed by ISO date, recording `work_sessions` and `focus_minutes` per day.
+**Persistence** (`storage.py`): JSON files in `%APPDATA%/PomoClock/` — `settings.json`, `tasks.json`, `stats.json`. Stats are keyed by ISO date, recording `work_sessions` and `focus_minutes` per day.
 
 **Notifications** (`notifications.py`): Uses PowerShell `ToastNotificationManager` for Windows toast notifications, `winsound.MessageBeep` for audio alerts. Both degrade silently on failure.
 
